@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include "webtcp.h"
 #include <stdbool.h>
-#include <pcap.h>
+//#include <pcap.h>
 #include <stdarg.h>
 #include <errno.h>
 #define BUFFER 8000
