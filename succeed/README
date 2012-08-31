@@ -1,0 +1,5 @@
+1,1udp_server.c是使用单线程发送DNS解析包的程序
+2,2udp_server_thread.c是使用 简单多线程发送DNS解析包的程序
+3,3udp_server_thread.c 使用boos/work模式多线程发送DNS解析包的程序
+4,4udp_thread_pool.c 是使用线程池模式多线程 发送DNS解析包的程序
+5,5udp_thread_pool.c 链表内容一样是因为分配结构体内存问题和结构体中的数组问题。解决掉了。最终速度在我的虚拟机里面测试三个线程能到2w-3w。使用bind9的速度是1.5w，速度快了近两倍。
