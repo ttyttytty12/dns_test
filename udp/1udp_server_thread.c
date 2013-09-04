@@ -306,7 +306,7 @@ main()
 //	printf("send_messgeid=%c",st_funcall.send_messgeid);
 		pthread_create(&t1,NULL,(void *)tprocess1,(void *)&st_funcall);
 		pthread_create(&t2,NULL,(void *)tprocess2,(void *)&st_funcall);
-		pthread_join(t1,NULL);
+//		pthread_join(t1,NULL);
 	}
 	close(sockfd); /* close listenfd */ 
 }
